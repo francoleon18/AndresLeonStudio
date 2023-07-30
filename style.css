@@ -81,6 +81,7 @@ header a:hover {
         )
         ,url(imgs/fondo1.jpg);
     color: antiquewhite;
+    background-size: cover;
     height: 100vh;
     
 }
@@ -93,10 +94,11 @@ header a:hover {
     background-image: url(imgs/andres.jpg);
     background-size: cover;
     background-position: center center;
-    border-radius: 10px;
-    height: 200px;
-    width: 425px;
+    padding: 100px 0px;
+    margin: 10px;
+    border-radius: 10px;  
 }
+
 
 /* estilos */
 
