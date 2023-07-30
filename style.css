@@ -81,6 +81,7 @@ header a:hover {
         )
         ,url(imgs/fondo1.jpg);
     color: antiquewhite;
+    background-size: cover;
     height: 100vh;
     
 }
