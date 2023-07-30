@@ -1,0 +1,326 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{font-size: 4.0em;}
+h2 {font-size: 2.7em; }
+h3 {font-size: 1.5em; }
+p {font-size: 1.0em; }
+
+button{
+    background-color: rgb(233, 65, 107);
+    border: 1px solid rgb(233, 65, 107);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgb(233, 65, 107) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1,2em;
+    font-weight: bold;
+    padding: auto;
+    color: antiquewhite;
+}
+button:hover{
+    background-color:   rgb(128, 32, 56) ;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* header */
+
+header{
+    background-color: rgb(0, 0, 0);
+}
+header .logo{
+    margin-top: 20px;
+    padding: 8px 10px;
+    border: 3px solid aliceblue;
+    color: aliceblue;
+    font-size: 2,5em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+header nav{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+  
+}
+header a{
+    padding: 5px 12px;
+    color: antiquewhite;
+    font-weight: bold;
+    text-decoration: none;
+}
+header a:hover {
+    color: rgb(233, 65, 107);
+}
+
+/* jumbotron */
+
+#jumbotron{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.74),
+        rgba(0, 0, 0, 0.747)
+        )
+        ,url(imgs/fondo1.jpg);
+    color: antiquewhite;
+    height: 100vh;
+    
+}
+
+#jumbotron .container{
+    text-align: center;
+    padding: 12px 12px;
+}
+#jumbotron .img-jumb{
+    background-image: url(imgs/andres.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    height: 200px;
+    width: 425px;
+}
+
+/* estilos */
+
+#nuestros-estilos{
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#nuestros-estilos .container{
+    padding: 120px 1px;
+}
+
+#nuestros-estilos h2{
+    margin-top: 0px;
+    font-size: 2.8em;
+}
+
+#nuestros-estilos p{
+    display: none;
+}
+
+#nuestros-estilos .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 32px;
+    border-radius: 10px;
+
+}
+
+.card:first-child{   
+    background-image: linear-gradient(
+    0deg,
+    rgb( 0,0,0,0.5),
+    rgb( 0,0,0,0.5)
+    )
+    ,url(imgs/tatuaje-realismos.jpg);
+    
+}
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgb( 0,0,0,0.5),
+        rgb( 0,0,0,0.5)
+    )
+    ,url(imgs/tradi-tatto.jpg);
+   
+}
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgb( 0,0,0,0.5),
+        rgb( 0,0,0,0.5)
+    )
+    ,url(imgs/japones-tatto.jpg);
+
+}
+
+#aditional{
+    background-color: rgb(65, 65, 65);
+    color: antiquewhite;
+    height: 80vh;
+    
+}
+
+#aditional .container{
+    text-align: center;
+    padding: 20px;
+}
+#aditional h2{
+    font-size: 2.2em;
+}
+
+footer{
+    background-color: black;
+    color: antiquewhite;
+}
+footer p{
+    margin: 0px;
+}
+footer .container{
+    padding: 20px 0px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media(min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0px;
+        padding-right: 30px;
+        padding-left: 10px;
+    }
+    header .logo{
+        margin: 10px 10px;
+
+    }
+
+    #jumbotron h1{
+        font-size: 4.0em;
+    }
+
+    #jumbotron .container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.74),
+        rgba(0, 0, 0, 0.747)
+        )
+        ,url(imgs/fondo1.jpg);
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        padding: 120px 0px;
+
+    }
+    
+    #jumbotron .text-jumb{
+        background-color: rgba(14, 9, 3, 0.075);
+        border-bottom: 10px;
+        color: rgb(248, 239, 239);
+        width: 50%;
+        text-align: initial;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    #jumbotron .img-jumb{
+        border-radius: 50px;
+        background-image: url(imgs/andres.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 65vh;
+        width: 35vw;
+    }
+
+    #nuestros-estilos .estilos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-estilos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-estilos h3{
+        margin-top: 0px;
+    }
+
+    #nuestros-estilos .card{
+        padding: 50px;
+        background-size: 100% 100px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(70, 63, 63);
+        box-shadow: 2px 2px 10px rgb(70, 63, 63);
+    }
+
+    .card:first-child{   
+        background-image: linear-gradient(
+        0deg,
+        rgb( 0,0,0,0.5),
+        rgb( 0,0,0,0.5)
+        )
+        ,url(imgs/tatuaje-realismos-rec.jpg);
+
+        
+    }
+    .card:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgb( 0,0,0,0.5),
+            rgb( 0,0,0,0.5)
+        )
+        ,url(imgs/tradi-tatto-rec.jpg);
+       
+    }
+    .card:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgb( 0,0,0,0.5),
+            rgb( 0,0,0,0.5)
+        )
+        ,url(imgs/japones-tatto-rec.jpg);
+    
+    }
+    #aditional .container{
+        display: flex;
+        justify-content: center;
+        padding: 100px 0px;
+
+    }
+    
+    #aditional .tex-add{
+
+        width: 50%;
+        text-align: initial;
+        justify-content: center;
+        
+    }
+
+    #aditional .img-add{
+        background-image: url(imgs/andres2.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 55vh;
+        width: 40vw;
+        margin: 0px 30px;
+    }
+    
+    footer .container{ 
+        justify-content: end;
+
+    }
+
+}
